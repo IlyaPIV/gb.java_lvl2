@@ -1,5 +1,4 @@
-import hw1.Interfaces.CanJump;
-import hw1.Interfaces.CanRun;
+package hw1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,9 +58,9 @@ public class Homework {
     private static Object generateMember(int type, int height, int length){
 
         switch (type){
-            case 0: return new Human("Human",height,length);
-            case 1: return new Robot("Robot", height, length);
-            case 2: return new Cat("Cat", height, length);
+            case 0: return new Human("hw1.Human",height,length);
+            case 1: return new Robot("hw1.Robot", height, length);
+            case 2: return new Cat("hw1.Cat", height, length);
             default: return null;
         }
     }

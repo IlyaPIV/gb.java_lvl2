@@ -1,4 +1,6 @@
-import hw1.Interfaces.CanJump;
+package hw1;
+
+import hw1.CanJump;
 
 public class Wall {
 
@@ -14,7 +16,7 @@ public class Wall {
 
     @Override
     public String toString() {
-        return "Wall{" +
+        return "hw1.Wall{" +
                 "height=" + height + " sm." +
                 '}';
     }

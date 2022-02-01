@@ -1,3 +1,7 @@
+package hw1;
+
+import hw1.CanJump;
+import hw1.CanRun;
 import hw1.Interfaces.*;
 
 public class Human implements CanJump, CanRun {
@@ -22,12 +26,12 @@ public class Human implements CanJump, CanRun {
 
     @Override
     public void tryToJump() {
-        System.out.println("Cat { "+name+" } is trying to jump.");
+        System.out.println("hw1.Cat { "+name+" } is trying to jump.");
     }
 
     @Override
     public void tryToRun() {
-        System.out.println("Human { "+name+" } is trying to run.");
+        System.out.println("hw1.Human { "+name+" } is trying to run.");
     }
 
     @Override
@@ -42,7 +46,7 @@ public class Human implements CanJump, CanRun {
 
     @Override
     public String toString() {
-        return "Human{" +
+        return "hw1.Human{" +
                 "name='" + name + '\'' +
                 "maxLength='" + maxLength + " m." +
                 "maxHeight='" + maxHeight + " sm." +

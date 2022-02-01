@@ -1,4 +1,4 @@
-package hw1.Interfaces;
+package hw1;
 
 public interface CanJump {
 

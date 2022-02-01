@@ -1,6 +1,10 @@
+package hw1;
+
+import hw1.CanJump;
+import hw1.CanRun;
 import hw1.Interfaces.*;
 
-public class Robot implements CanRun, CanJump{
+public class Cat implements CanJump, CanRun {
 
     private String name;
     private int maxHeight;
@@ -8,12 +12,12 @@ public class Robot implements CanRun, CanJump{
 
     private static int value;
 
-    public Robot(String name) {
+    public Cat(String name) {
         this.name = name+"_"+value;
         value++;
     }
 
-    public Robot(String name, int height, int length) {
+    public Cat(String name, int height, int length) {
         this.name = name+"_"+value;
         this.maxHeight = height;
         this.maxLength = length;
@@ -32,17 +36,17 @@ public class Robot implements CanRun, CanJump{
 
     @Override
     public void tryToJump() {
-        System.out.println("Robot { "+name+" } is trying to jump.");
+        System.out.println("hw1.Cat { "+name+" } is trying to jump.");
     }
 
     @Override
     public void tryToRun() {
-        System.out.println("Robot { "+name+" } is trying to run.");
+        System.out.println("hw1.Cat { "+name+" } is trying to run.");
     }
 
     @Override
     public String toString() {
-        return "Robot{" +
+        return "hw1.Cat{" +
                 "name='" + name + '\'' +
                 ", maxLength=" + maxLength + " m." +
                 ", maxHeight=" + maxHeight + " sm." +

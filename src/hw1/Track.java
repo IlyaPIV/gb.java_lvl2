@@ -1,4 +1,6 @@
-import hw1.Interfaces.CanRun;
+package hw1;
+
+import hw1.CanRun;
 
 public class Track {
     private int length;
@@ -13,7 +15,7 @@ public class Track {
 
     @Override
     public String toString() {
-        return "Track{" +
+        return "hw1.Track{" +
                 "length=" + length + " m." +
                 '}';
     }
