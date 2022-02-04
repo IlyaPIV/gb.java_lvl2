@@ -2,7 +2,7 @@ package hw1;
 
 import hw1.CanJump;
 import hw1.CanRun;
-import hw1.Interfaces.*;
+
 
 public class Human implements CanJump, CanRun {
 
